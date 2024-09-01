@@ -1,0 +1,25 @@
+body {
+    /* background-color: #bf7255; */
+    background-color: aqua;
+    margin: 50px;
+}
+
+#dragon {
+    color: whitesmoke;
+    width: 100px;
+    height: 200px;
+    background: #007fff;
+    border: 2px solid #fff;
+    transition: height 0.5s ease-in-out, border-width 0.5s ease-in-out;
+    overflow: hidden;
+
+    position: absolute;  /* Фиксированное положение */
+    bottom: 0;           /* Прижимаем к нижней части экрана */
+    left: 50%;           /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрирование с учетом ширины контейнера */
+}
+
+#dragon:hover {
+    height: 20px;  /* Уменьшаем высоту до 20px */
+    border-width: 20px;  /* Увеличиваем ширину границы */
+}

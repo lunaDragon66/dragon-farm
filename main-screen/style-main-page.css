@@ -1,0 +1,68 @@
+body {
+    background-color: aquamarine;
+}
+.button-container {
+    position: relative; /* Устанавливаем контейнер как относительный, чтобы текст можно было позиционировать */
+    display: inline-block; /* Контейнер занимает только место изображения */
+}
+.button-image {
+    display: block;
+    width: 100%; /* Изображение будет растягиваться на всю ширину контейнера */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 
+            0 0 5px #ff00ff, 
+            0 0 10px #ff00ff, 
+            0 0 15px #ff00ff, 
+            0 0 20px #cd27cd;
+        font-size: 20px;
+    }
+    50% {
+        text-shadow: 
+            0 0 50px #00ccff, 
+            0 0 60px #00eaff, 
+            0 0 70px #00d9ff, 
+            0 0 8cqb #00c3ff;
+        font-size: 28px;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #ff00ff, 
+            0 0 10px #ff00ff, 
+            0 0 15px #ff00ff, 
+            0 0 20px #ff00ff;
+        font-size: 20px;
+    }
+}
+
+.button-text {
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Смещаем текст на половину его ширины и высоты, чтобы точно попасть в центр */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    font-size: 24px; /* Размер текста */
+    font-weight: bold; /* Жирный шрифт */
+    text-shadow: 
+        0 0 5px #ff00ff, /* Основное свечение */
+        0 0 10px #ff00ff, /* Более сильное свечение */
+        0 0 15px #ff00ff, /* Ещё более сильное свечение */
+        0 0 20px #ff00ff; /* Наиболее сильное свечение */
+    pointer-events: none; /* Текст не будет мешать кликам по кнопке */
+    animation: glow 2s ease-in-out infinite;
+}
+a {
+    display: block; /* Чтобы ссылка занимала всю область кнопки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
+.button-link {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 50%;
+    height: 50%;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
