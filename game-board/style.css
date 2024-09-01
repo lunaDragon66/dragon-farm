@@ -23,3 +23,25 @@ body {
     height: 20px;  /* Уменьшаем высоту до 20px */
     border-width: 20px;  /* Увеличиваем ширину границы */
 }
+/* Стили для контейнера золота */
+#gold-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стили для текста "Золото:" */
+#gold-text {
+    font-size: 24px;
+    color: #ffcc00; /* Золотой цвет */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стили для количества золота */
+#gold-amount {
+    font-size: 48px;
+    color: #ffd700; /* Цвет золота */
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Эффект свечения */
+}
