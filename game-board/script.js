@@ -8,7 +8,9 @@ function updateGoldDisplay() {
     const goldAmount = getRandomGoldAmount(10, 200); // Генерация случайного количества золота
     const goldAmountElement = document.getElementById('gold-amount');
     goldAmountElement.textContent = goldAmount; // Обновление текста на странице
+    localStorage.setItem("gold", goldAmount);
 }
 
 // Запуск функции при загрузке страницы
 window.onload = updateGoldDisplay;
+
